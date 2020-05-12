@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.css">
 </head>
@@ -12,10 +13,10 @@
 <body>
 
   <div class="wrapper">
-    <div class="container">
+    <header class="container">
       <div class="row">
         <div class="col-12">
-          <header class="header">
+          <div class="header">
             <div class="headerImg">
               <h1 class="title">高雄旅遊資訊</h1>
               <div class="districtSelect">
@@ -23,30 +24,75 @@
                   <option value="--請選擇行政區--">--請選擇行政區--</option>
                 </select>
               </div>
-              <div class="hotDistrict">
-                <div class="hotDistrictBox">
-                  <P>熱門行政區</P>
-                  <div class="d-flex flex-wrap">
-                    <div class="district">
-                      <a href="#" class="districtLabel bg-purple">苓雅區</a>
+              <div class="px-3 bg-white">
+                <div class="hotDistrict">
+                  <div class="hotDistrictBox">
+                    <P>熱門行政區</P>
+                    <div class="d-flex flex-wrap">
+                      <div class="district">
+                        <a href="#" class="districtLabel bg-purple">苓雅區</a>
+                      </div>
+                      <div class="district">
+                        <a href="#" class="districtLabel bg-orange">三民區</a>
+                      </div>
+                      <div class="district">
+                        <a href="#" class="districtLabel bg-yellow">新興區</a>
+                      </div>
+                      <div class="district">
+                        <a href="#" class="districtLabel bg-blue">鹽埕區</a>
+                      </div>
                     </div>
-                    <div class="district">
-                      <a href="#" class="districtLabel bg-orange">三民區</a>
+                  </div>
+                  <i class="fas fa-chevron-circle-down downIcon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="districtMain">
+      <div class="container">
+        <div class="row">
+          <p class="districtName">三民區</p>
+          <div class="col-12 sights">
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <div class="position-relative">
+                    <img src="../images/the-urban-landscape-1698285.png" class="card-img-top sightsImg" alt="">
+                    <div class="sightsTitle">
+                      <p class="sightsName">三民區</p>
+                      <p class="sightsDistrict">三民區</p>
                     </div>
-                    <div class="district">
-                      <a href="#" class="districtLabel bg-yellow">新興區</a>
-                    </div>
-                    <div class="district">
-                      <a href="#" class="districtLabel bg-blue">鹽埕區</a>
-                    </div>
+                  </div>
+                  <div class="card-body position-relative">
+                    <p class="card-text">
+                      <img src="./images/icons_clock.png" class="mr-1" alt="">
+                      <span>週二至週日10:00-18:00，每週一公休</span>
+                    </p>
+                    <p class="card-text">
+                      <img src="./images/icons_pin.png" class="mr-1" alt="">
+                      <span>高雄市三民區鼎金後路461巷</span>
+                    </p>
+                    <p class="card-text">
+                      <img src="./images/icons_phone.png" class="mr-1 phoneIcon" alt="">
+                      <span>886-7-7995678</span>
+                    </p>
+                    <div class="tag">
+                      <img src="./images/icons_tag.png" alt="">
+                      <span>免費參觀</span>
                     </div>
                   </div>
                 </div>
               </div>
-          </header>
+              <div class="col-6">321</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+    <div class="footer">321</div>
   </div>
 
   <script src="js/jquery-3.4.1.min.js"></script>
